@@ -19,12 +19,14 @@ Credits for: [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShel
 **Installation**
 
 [Installation_Rice](./installation/Installation_Rice.md)
+
 [Installation_Development_Env](./installation/Installation_Development_Env.md)
+
 [Installation_Video_Edition](./installation/Installation_Video_Edition.md)
 
 ### Dotfiles Explanation
 
-- **nvim**: Neovim Text/Code Editor with Lazyvim.
+- **.config/nvim**: Neovim Text/Code Editor with Lazyvim.
 
 ### Shortcuts And Keys
 
