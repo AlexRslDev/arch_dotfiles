@@ -27,6 +27,8 @@ Credits for: [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShel
 
 [Applications](/installation/Applications.md)
 
+**Note:** Before installing Applications you must execute **./installation/enable_multilib.sh**
+
 ### Dotfiles Explanation
 
 - **.config/nvim**: Neovim Text/Code Editor with Lazyvim.
