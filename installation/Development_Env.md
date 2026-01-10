@@ -32,3 +32,10 @@ sudo pacman -S docker docker-compose
 sudo systemctl enable --now docker.service
 sudo usermod -aG docker $USER
 ```
+
+### Git Credentials
+
+```
+sudo pacman -S --needed git-credential-oauth libsecret gnome-keyring
+git config --global credential.helper oauth
+```
