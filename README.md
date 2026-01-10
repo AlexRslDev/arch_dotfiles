@@ -5,7 +5,6 @@
 - [Rice](#rice)
 - [Dotfiles Explanation](#dotfiles-explanation)
 - [Shortcuts And Keys](#shortcuts-and-keys)
-- [Dependencies](#dependencies)
 - [Todo](#todo)
 
 ### Rice
@@ -18,15 +17,27 @@ Credits for: [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShel
 
 **Installation**
 
-[Installation_Rice](./installation/Installation_Rice.md)
+[Rice](./installation/Rice.md)
 
-[Installation_Development_Env](./installation/Installation_Development_Env.md)
+[Development_Env](./installation/Development_Env.md)
 
-[Installation_Video_Edition](./installation/Installation_Video_Edition.md)
+[Video_Edition](./installation/Video_Edition.md)
+
+[Essentials](/installation/Essentials.md)
+
+[Applications](/installation/Applications.md)
 
 ### Dotfiles Explanation
 
 - **.config/nvim**: Neovim Text/Code Editor with Lazyvim.
+- **.config/fastfetch**: Fastfetch Custom Configuration.
+- **.config/oh-my-posh**: Terminal Customization with Oh My Posh.
+- **.config/hypr**: Hyprland Configuration.
+- **.config/terminal-logos**: Images to customize the terminal image for fastfetch.
+- **.oh-my-zsh**:** Oh My Zsh Configuration to handle terminal plugins.
+- **.zshrc:** Zsh Configuration.
+- **.local/share/fonts:** Some Extra fonts.
+- **.local/share/icons:** Cursor.
 
 ### Shortcuts And Keys
 
@@ -36,5 +47,4 @@ Credits for: [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShel
 
 ### Todo
 
-- [x] Tarefa 1
 - [ ] Add images for necessary configs like **nvim**.
