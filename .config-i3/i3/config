@@ -19,14 +19,17 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xset s 3600 3600
+# Quita el tiempo de xset (Ponlo en 0 para que no choque con xautolock)
+exec --no-startup-id xset s 0 0
+exec --no-startup-id xset dpms 0 0 0
 
+# xss-lock SOLO para cuando la PC entra en suspensión manualmente o por tapa cerrada
 exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/scripts/lock.sh
 
-exec --no-startup-id xautolock -time 60 -locker "~/.config/i3/scripts/lock.sh" -notify 30 -notifier "notify-send 'Locking in 30 seconds...'" --killtime 10 -killer "systemctl suspend"
+# xautolock para el control inteligente por tiempo
+exec --no-startup-id xautolock -time 60 -locker "~/.config/i3/scripts/lock.sh" -notify 30 -notifier "notify-send 'Locking in 30 seconds...'" -killtime 10 -killer "systemctl suspend"
 
 exec --no-startup-id caffeine-ng
-
 bindsym $mod+n exec ~/.config/i3/scripts/lock.sh
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
