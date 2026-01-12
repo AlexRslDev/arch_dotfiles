@@ -17,7 +17,9 @@ Credits for: [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShel
 
 **Installation**
 
-[Rice](./installation/Rice.md)
+[i3_Rice](./installation/i3_Rice.md)
+
+[hyprland_Rice](./installation/hyprland_Rice.md)
 
 [Development_Env](./installation/Development_Env.md)
 
