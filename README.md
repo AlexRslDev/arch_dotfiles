@@ -9,25 +9,49 @@
 
 ### Rice
 
+#### Hyprland Rice
+
 Credits for: [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell)
 
 **Sreenshots**
 
 ...
 
-**Installation**
+#### i3 Rice
+
+**Sreenshots**
+
+...
+
+#### Installation
+
+#### How to install arch linux
+
+[Install_Arch_linux](/installation/Install_Arch_linux.md)
+
+#### How to install i3 rice
 
 [i3_Rice](./installation/i3_Rice.md)
 
+#### How to install hyprland rice
+
 [hyprland_Rice](./installation/hyprland_Rice.md)
 
-[Development_Env](./installation/Development_Env.md)
+#### Global Installation
 
-[Video_Edition](./installation/Video_Edition.md)
+[1. enable_multilib.sh](./installation/enable_multilib.sh)
 
-[Essentials](/installation/Essentials.md)
+[2. Essentials](/installation/Essentials.md)
 
-[Applications](/installation/Applications.md)
+[3. Development_Env](./installation/Development_Env.md)
+
+[4. File_Explorers](./installation/File_Explorers.md)
+
+[5. Browsers](./installation/Browsers.md)
+
+[6. Applications](/installation/Applications.md)
+
+[7. Video_Edition](./installation/Video_Edition.md)
 
 **Note:** Before installing Applications you must execute **./installation/enable_multilib.sh**
 
