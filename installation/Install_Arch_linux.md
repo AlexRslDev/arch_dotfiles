@@ -2,6 +2,25 @@
 
 + Download arch linux iso.
 + Boot it into a pendrive.
+
+1. Identify the usb, it's usually sbd or sbdc.
+
+```
+lsblk
+```
+
+2. Unmount the usb.
+
+```
+sudo umount /dev/sdb*
+```
+
+3. Boot Iso in the usb.
+
+```
+sudo dd bs=4M if=archlinux-xxxx.iso of=/dev/sdb status=progress oflag=sync
+```
+
 + Verify Internet conection
 
 ```
