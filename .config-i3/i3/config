@@ -77,6 +77,15 @@ bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle
 bindsym $mod+Shift+F11 exec xrandr --output HDMI-1 --brightness 0.5
 bindsym $mod+Shift+F12 exec xrandr --output HDMI-1 --brightness 1.0
 
+# Capturar toda la pantalla y guardar en Imágenes
+bindsym Print exec --no-startup-id maim ~/Pictures/$(date +%s).png
+
+# Seleccionar un área o ventana con el mouse y copiar al portapapeles
+bindsym $mod+Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
+
+# Seleccionar un área y guardar archivo + copiar al portapapeles (el más útil)
+bindsym $mod+Shift+Print exec --no-startup-id maim -s ~/Pictures/$(date +%s).png && xclip -selection clipboard -t image/png -i ~/Pictures/$(date +%s).png
+
 #Rofi
 # Spotlight
 bindsym $mod+control exec rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/rofi-theme/rofi/launcher.rasi
