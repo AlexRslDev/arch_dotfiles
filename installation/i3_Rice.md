@@ -29,7 +29,7 @@ rm -rf yay
 ### Install i3
 
 ```
-sudo pacman -S --needed i3-wm i3blocks i3status xss-lock xorg-xset xclip rofi feh picom kitty dunst network-manager-applet
+sudo pacman -S --needed i3-wm i3blocks i3status xss-lock xorg-xset maim xclip rofi feh picom kitty dunst network-manager-applet
 
 yay -S i3lock-color
 yay -S caffeine-ng
