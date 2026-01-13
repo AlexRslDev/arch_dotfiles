@@ -27,7 +27,9 @@ Credits for: [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShel
 
 #### How to install arch linux
 
-[Install_Arch_linux](/installation/Install_Arch_linux.md)
+[Install_Arch_linux](./installation/Install_Arch_linux.md)
+
+[GRUB-Customization (optional)](/installation/GRUB-Customization.md)
 
 #### How to install i3 rice
 
