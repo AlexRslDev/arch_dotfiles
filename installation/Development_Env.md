@@ -40,6 +40,6 @@ sudo usermod -aG docker $USER
 ### Git Credentials
 
 ```
-sudo pacman -S --needed git-credential-oauth libsecret gnome-keyring
+yay -S git-credential-oauth
 git config --global credential.helper oauth
 ```
