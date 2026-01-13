@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ruta a tu fondo de pantalla favorito
-PICTURE="/home/alex/Downloads/spider.jpg"
+PICTURE="/home/crownion/Pictures/wallpapers/wallhaven-3lvpd6.jpg"
 
 # Colores (sin el # si te dio problemas antes)
 BLANK='00000000'
