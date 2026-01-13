@@ -11,7 +11,7 @@ nvm install node
 
 ```
 sudo pacman -S zsh
-chsh -s $(which zsh)
+chsh -s /usr/bin/zsh
 ```
 
 **Note**: Logout to apply changes.
