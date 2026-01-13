@@ -3,7 +3,12 @@
 ### Recommended Themes
 
 + [CyberGRUB-2077](https://www.gnome-look.org/p/2235245)
+
+![CyberGRUB-2077 Preview](https://images.pling.com/img/00/00/82/52/18/2235245/preview1.png)
+
 + [Kali-Linux-Gray-Theme](https://www.gnome-look.org/p/2186668)
+
+![Kali-Linux-Gray-Theme Preview]([https://images.pling.com/img/00/00/82/52/18/2235245/preview1.png](https://images.pling.com/img/00/00/80/02/68/2186668/thumbnail.png))
 
 ### How to install themes
 
