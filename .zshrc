@@ -1,3 +1,5 @@
+export QT_QPA_PLATFORMTHEME=qt5ct
+
 source /usr/share/nvm/init-nvm.sh
 
 plugins=(
