@@ -69,7 +69,7 @@ After that, set them into lxappearance.
 ### Themes
 
 ```
-sudo pacman -S gnome-themes-extra
+sudo pacman -S --needed gnome-themes-extra xdg-desktop-portal xdg-desktop-portal-gtk
 
 yay -S gtk-engine-murrine gtk-engines
 
@@ -106,3 +106,11 @@ For Qt Apps
 ```
 sudo pacman -S qt5ct qt6ct
 ```
+
+How to know if dark mode is working?
+
+```
+dbus-send --print-reply --dest=org.freedesktop.portal.Desktop /org/freedesktop/portal/desktop org.freedesktop.portal.Settings.Read string:'org.freedesktop.appearance' string:'color-scheme'
+```
+
+if it returns "uint32 1" it's dark theme on.
