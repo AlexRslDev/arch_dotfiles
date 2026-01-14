@@ -43,3 +43,9 @@ sudo usermod -aG docker $USER
 yay -S git-credential-oauth
 git config --global credential.helper oauth
 ```
+
+### Python
+
+```
+sudo pacman -S python-pip pipx
+```
