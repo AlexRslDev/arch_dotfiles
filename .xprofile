@@ -1,2 +1,5 @@
 export GTK_THEME=Adwaita-dark
 export QT_QPA_PLATFORMTHEME=qt5ct
+export ADW_DISABLE_PORTAL=0
+export XDG_CURRENT_DESKTOP=GNOME
+export DESKTOP_SESSION=gnome
