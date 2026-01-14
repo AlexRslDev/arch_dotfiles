@@ -47,5 +47,5 @@ git config --global credential.helper oauth
 ### Python
 
 ```
-sudo pacman -S python-pip pipx
+sudo pacman -S python-pip python-pipx
 ```
