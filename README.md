@@ -1,23 +1,16 @@
-# Dev Workflow Dotfiles
+# ✦ Dev Workflow Dotfiles [I3wm + Arch Linux] ✦
 
 ### Table Of Contents
 
 - [Rice](#rice)
-- [Dotfiles Explanation](#dotfiles-explanation)
+- [Installation](#installation)
+  - [How to install arch linux](#how-to-install-arch-linux)
+  - [How to install rice](#how-to-install-rice)
+  - [Global Installation](#global-installation)
 - [Shortcuts And Keys](#shortcuts-and-keys)
 - [Todo](#todo)
 
 ### Rice
-
-#### Hyprland Rice
-
-Credits for: [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell)
-
-**Sreenshots**
-
-...
-
-#### i3 Rice
 
 **Sreenshots**
 
@@ -31,13 +24,9 @@ Credits for: [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShel
 
 [GRUB-Customization (optional)](/installation/GRUB-Customization.md)
 
-#### How to install i3 rice
+#### How to install rice
 
-[i3_Rice](./installation/i3_Rice.md)
-
-#### How to install hyprland rice
-
-[hyprland_Rice](./installation/hyprland_Rice.md)
+[Rice](./installation/i3_Rice.md)
 
 #### Global Installation
 
@@ -55,25 +44,11 @@ Credits for: [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShel
 
 [7. Video_Edition](./installation/Video_Edition.md)
 
-**Note:** Before installing Applications you must execute **./installation/enable_multilib.sh**
-
-### Dotfiles Explanation
-
-- **.config/nvim**: Neovim Text/Code Editor with Lazyvim.
-- **.config/fastfetch**: Fastfetch Custom Configuration.
-- **.config/oh-my-posh**: Terminal Customization with Oh My Posh.
-- **.config/hypr**: Hyprland Configuration.
-- **.config/terminal-logos**: Images to customize the terminal image for fastfetch.
-- **.oh-my-zsh**:** Oh My Zsh Configuration to handle terminal plugins.
-- **.zshrc:** Zsh Configuration.
-- **.local/share/fonts:** Some Extra fonts.
-- **.local/share/icons:** Cursor.
-
 ### Shortcuts And Keys
 
 | Shortcut | Description                |
 | :-------- | :------------------------- |
-| `Ctrl+Space` | Open Spotlight |
+| `Ctrl+Space` | Open Rofi Launcher |
 
 ### Todo
 
