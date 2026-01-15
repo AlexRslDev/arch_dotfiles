@@ -1,0 +1,23 @@
+/* Confirm Dialog */
+
+@import "colors.rasi"
+
+* {
+    background-color:       @bg;
+    text-color:             @fg;
+	font:				 	"JetBrains Nerd Font Mono 14";
+}
+
+window {
+    width:      			320px;
+    padding:    			25px;
+    border-radius:          16px;
+    border-color:           @ac;
+    location:               center;
+    y-offset:               -2em;
+}
+
+entry {
+    expand: 				true;
+    text-color:				@ac;
+}

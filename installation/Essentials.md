@@ -13,7 +13,7 @@ rm -rf yay
 ### Install Flatpak
 
 ```
-sudo pacman -S  flatpak
+sudo pacman -S --needed flatpak
 ```
 
 **Note:** Reboot to apply changes.
@@ -21,7 +21,7 @@ sudo pacman -S  flatpak
 ### Polkit
 
 ```
-sudo pacman -S polkit-gnome
+sudo pacman -S --needed polkit-gnome
 ```
 
 ### Keyring

@@ -1,0 +1,38 @@
+[global]
+    monitor = 0
+    follow = mouse
+    width = 300
+    height = 300
+    origin = top-right
+    offset = 10x10
+    scale = 0
+    notification_limit = 5
+    
+    font = JetBrainsMono Nerd Font 10
+    line_height = 0
+    padding = 8
+    horizontal_padding = 8
+    frame_width = 2
+    separator_color = frame
+    
+    # Colors
+    frame_color = #333c43
+    separator_color = #3c3836
+
+[urgency_low]
+    background = #333c43
+    foreground = #3b444a
+    frame_color = #8ec07c
+    timeout = 5
+
+[urgency_normal]
+    background  #333c43
+    foreground = #3b444a
+    frame_color = #458588
+    timeout = 10
+
+[urgency_critical]
+    background = #333c43
+    foreground = #ebdbb2
+    frame_color = #fb4934
+    timeout = 0

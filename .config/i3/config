@@ -1,0 +1,248 @@
+set $mod Mod4
+
+# ---------------------------------------------------------
+#  General Styles
+# ---------------------------------------------------------
+font pango:JetBrains Nerd Font Mono 8
+
+exec_always --no-startup-id feh --bg-fill /home/crownion/Pictures/wallpapers/wallhaven-3lvpd6.jpg
+
+gaps inner 8
+gaps outer 1
+
+default_border pixel 1
+default_floating_border pixel 0
+# class                 border   bg       text     indicator child_border
+client.focused          #a7c080  #a7c080  #ffffff  #a7c080   #a7c080
+client.unfocused        #282a36  #282a36  #bfbfbf  #282a36   #282a36
+
+# ---------------------------------------------------------
+#  Start Environment
+# ---------------------------------------------------------
+exec --no-startup-id dex --autostart --environment i3
+
+# ---------------------------------------------------------
+#  Start Portals => Dark Mode Related
+# ---------------------------------------------------------
+exec --no-startup-id /usr/lib/xdg-desktop-portal &
+exec --no-startup-id /usr/lib/xdg-desktop-portal-gtk &
+
+# ---------------------------------------------------------
+#  Force Dark Mode
+# ---------------------------------------------------------
+exec_always --no-startup-id gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+exec_always --no-startup-id gsettings set org.gnome.desktop.interface gtk-theme 'Everforest-BL-MB-Dark-Soft'
+
+# ---------------------------------------------------------
+#  Lockscreen and Sleep Mode
+# ---------------------------------------------------------
+exec --no-startup-id xset s 0 0
+exec --no-startup-id xset dpms 0 0 0
+
+exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/scripts/lock.sh
+exec --no-startup-id xautolock -time 60 -locker "~/.config/i3/scripts/lock.sh" -notify 30 -notifier "notify-send 'Locking in 30 seconds...'" -killtime 10 -killer "systemctl suspend"
+exec --no-startup-id caffeine-ng
+
+bindsym $mod+n exec ~/.config/i3/scripts/lock.sh
+
+# ---------------------------------------------------------
+#  Polkit
+# ---------------------------------------------------------
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# ---------------------------------------------------------
+#  Networs
+# ---------------------------------------------------------
+exec --no-startup-id nm-applet
+
+# ---------------------------------------------------------
+#  Bluetooth
+# ---------------------------------------------------------
+exec --no-startup-id blueman-applet
+
+# ---------------------------------------------------------
+#  Picom
+# ---------------------------------------------------------
+exec_always --no-startup-id picom -b
+
+# ---------------------------------------------------------
+#  Gnome keyring
+# ---------------------------------------------------------
+exec --no-startup-id gnome-keyring-daemon --start --components=secrets,ssh,pkcs11
+
+# ---------------------------------------------------------
+#  Audio
+# ---------------------------------------------------------
+set $refresh_i3status killall -SIGUSR1 i3status
+
+bindsym $mod+Up exec --no-startup-id amixer -D pulse sset Master 5%+
+bindsym $mod+Down exec --no-startup-id amixer -D pulse sset Master 5%-
+bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle
+
+# ---------------------------------------------------------
+#  Brightness
+# ---------------------------------------------------------
+# Indentify monitor
+# xrandr --query | grep " connected"
+
+exec_always --no-startup-id xrandr --output HDMI-1 --brightness 0.4 --output DP-3 --brightness 0.6
+
+# ---------------------------------------------------------
+#  Screenshots
+# ---------------------------------------------------------
+# Full window Screenshot and save it into Pictures
+bindsym $mod+Shift+Print exec --no-startup-id maim ~/Pictures/$(date +%s).png
+
+# Select area and copy Screenshot to clipboard
+bindsym Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
+
+# Select area, save it into Pictures, and copy it to clipboard
+bindsym $mod+Print exec --no-startup-id maim -s ~/Pictures/$(date +%s).png && xclip -selection clipboard -t image/png -i ~/Pictures/$(date +%s).png
+
+# ---------------------------------------------------------
+#  Rofi
+# ---------------------------------------------------------
+# Spotlight
+bindsym control+space exec rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/rofi-theme/rofi/launcher.rasi
+
+# Powermenu
+bindsym $mod+Shift+x exec ~/.config/rofi-theme/powermenu.sh
+
+# ---------------------------------------------------------
+#  General Bindings
+# ---------------------------------------------------------
+# Color Picker
+bindsym $mod+p exec --no-startup-id xcolor -s clipboard
+
+# File Explorer
+bindsym $mod+e exec nautilus
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# move tiling windows via drag & drop by left-clicking into the title bar,
+# or left-clicking anywhere into the window while holding the floating modifier.
+tiling_drag modifier titlebar
+
+# start a terminal
+bindsym $mod+t exec kitty
+
+# kill focused window
+bindsym $mod+q kill
+
+# start dmenu (a program launcher)
+# bindsym $mod+d exec --no-startup-id dmenu_run
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# split in horizontal orientation
+#bindsym $mod+h split h
+
+# split in vertical orientation
+#bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+f floating toggle
+
+# change focus between tiling / floating windows
+#bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+#bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# exit i3 (logs you out of your X session)
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+bindsym $mod+r mode "resize"
+
+# ---------------------------------------------------------
+#  Window Rules
+# ---------------------------------------------------------
+for_window [class="org.gnome.Nautilus"] floating enable, resize set 900 700, move position center
+
+# ---------------------------------------------------------
+#  i3 Bar
+# ---------------------------------------------------------
+bar {
+        output DP-3
+        status_command i3status
+        #mode hide
+        font pango:JetBrains Nerd Font Mono 8
+        separator_symbol "  |  "
+}
+

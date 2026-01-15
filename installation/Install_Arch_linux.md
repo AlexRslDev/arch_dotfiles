@@ -9,13 +9,13 @@
 lsblk
 ```
 
-2. Unmount the usb.
+1. Unmount the usb.
 
 ```
 sudo umount /dev/sdb*
 ```
 
-3. Boot Iso in the usb.
+1. Boot Iso in the usb.
 
 ```
 sudo dd bs=4M if=archlinux-xxxx.iso of=/dev/sdb status=progress oflag=sync
@@ -62,9 +62,9 @@ lsblk  <- to check if it's clean.
 archinstall
 ```
 
-**NOTE**: Install the desktok that you want with archinstall.
+**NOTE**: Install the desktop or wm, audio (pipewire), Bluetooth, NetworkManager, Session Manager (ly,sddm...), directly from archinstall, it's because archinstall ensure to install everything to make all works out of the box for you.
 
-### After Reboot: Activate Wifi
+### After Reboot (if you don't have ly or sddm): Activate Wifi
 
 ```
 sudo nmcli dev wifi connect [wifi name] password [wifi password]

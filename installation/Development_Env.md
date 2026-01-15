@@ -3,14 +3,14 @@
 ### Node And NVM
 
 ```
-yay -S nvm
+yay -S --needed nvm
 nvm install node
 ```
 
 ### Terminal
 
 ```
-sudo pacman -S zsh
+sudo pacman -S --needed zsh
 chsh -s /usr/bin/zsh
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -26,13 +26,13 @@ source ~/.zshrc
 ```
 
 ```
-yay -S oh-my-posh-bin
+yay -S --needed oh-my-posh-bin
 ```
 
 ### Docker
 
 ```
-sudo pacman -S docker docker-compose
+sudo pacman -S --needed docker docker-compose
 sudo systemctl enable --now docker.service
 sudo usermod -aG docker $USER
 ```
@@ -40,12 +40,12 @@ sudo usermod -aG docker $USER
 ### Git Credentials
 
 ```
-yay -S git-credential-oauth
+yay -S --needed git-credential-oauth
 git config --global credential.helper oauth
 ```
 
 ### Python
 
 ```
-sudo pacman -S python-pip python-pipx
+sudo pacman -S --needed python python-pip
 ```

@@ -3,29 +3,29 @@
 ### Firefox
 
 ```
-sudo pacman -S firefox
+sudo pacman -S --needed firefox
 ```
 
 ### Firefox Developer Version
 
 ```
-yay -S firefox-developer-edition
+yay -S --needed firefox-developer-edition
 ```
 
 ### Qutebrowser
 
 ```
-sudo pacman -S qutebrowser
+sudo pacman -S --needed qutebrowser
 ```
 
 ### Brave
 
 ```
-yay -S brave-bin
+yay -S --needed brave-bin
 ```
 
 ### LibreWolf
 
 ```
-yay -S librewolf-bin
+yay -S --needed librewolf-bin
 ```

@@ -1,0 +1,19 @@
+headerbar {
+    min-height: 18px;
+    max-height: 18px
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0;
+}
+
+headerbar button.titlebutton {
+    padding: 0px 2px;
+    min-height: 16px;
+    min-width: 16px;
+}
+
+window.csd headerbar {
+    padding: 0;
+}

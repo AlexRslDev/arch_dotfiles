@@ -3,13 +3,13 @@
 ### Yay Apps
 
 ```
-yay -S figma-linux-bin visual-studio-code-bin webapp-manager iriunwebcam-bin ccrypt burpsuite vesktop-bin ab-download-manager-bin localsend-bin
+yay -S --needed figma-linux-bin visual-studio-code-bin webapp-manager iriunwebcam-bin ccrypt burpsuite vesktop-bin ab-download-manager-bin localsend-bin
 ```
 
 ### Pacman Apps
 
 ```
-sudo pacman -S obs-studio kdeconnect gparted mtools dosfstools ntfs-3g exfatprogs f2fs-tools vlc vlc-plugins-all 7zip unrar zip unzip rustup qbittorrent syncthing
+sudo pacman -S --needed obs-studio kdeconnect gparted mtools dosfstools ntfs-3g exfatprogs f2fs-tools vlc vlc-plugins-all 7zip unrar zip unzip rustup qbittorrent syncthing
 ```
 
 ### Notes
@@ -58,7 +58,7 @@ yay -S protonup-qt
 ### Flatpak Apps
 
 ```
-flatpak install flathub -y com.bitwarden.desktop com.github.PintaProject.Pinta com.github.flxzt.rnote com.github.huluti.Curtail com.github.tenderowl.frog com.github.unrud.VideoDownloader com.jeffser.Pigment com.protonvpn.www com.rafaelmardojai.Blanket com.rafaelmardojai.SharePreview com.spotify.Client com.warlordsoftwares.formatlab io.github.alainm23.planify io.github.bytezz.IPLookup io.github.shundhammer.qdirstat io.github.wartybix.Constrict io.github.zefr0x.hashes io.gitlab.adhami3310.Converter it.mijorus.gearlever me.iepure.devtoolbox org.feichtmeier.Musicpod org.gnome.Loupe org.gnome.Mines org.gnome.Papers org.gnome.TextEditor org.inkscape.Inkscape org.kde.kalk org.kde.kdenlive org.kde.kruler org.onlyoffice.desktopeditors org.sqlitebrowser.sqlitebrowser org.telegram.desktop org.tenacityaudio.Tenacity org.upscayl.Upscayl rest.insomnia.Insomnia org.gnome.baobab
+flatpak install flathub -y --or-update com.bitwarden.desktop com.github.PintaProject.Pinta com.github.flxzt.rnote com.github.huluti.Curtail com.github.tenderowl.frog com.github.unrud.VideoDownloader com.jeffser.Pigment com.protonvpn.www com.rafaelmardojai.Blanket com.rafaelmardojai.SharePreview com.spotify.Client com.warlordsoftwares.formatlab io.github.alainm23.planify io.github.bytezz.IPLookup io.github.shundhammer.qdirstat io.github.wartybix.Constrict io.github.zefr0x.hashes io.gitlab.adhami3310.Converter it.mijorus.gearlever me.iepure.devtoolbox org.feichtmeier.Musicpod org.gnome.Loupe org.gnome.Mines org.gnome.Papers org.gnome.TextEditor org.inkscape.Inkscape org.kde.kalk org.kde.kdenlive org.kde.kruler org.onlyoffice.desktopeditors org.sqlitebrowser.sqlitebrowser org.telegram.desktop org.tenacityaudio.Tenacity org.upscayl.Upscayl rest.insomnia.Insomnia org.gnome.baobab
 ```
 
 ### Reminder
