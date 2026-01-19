@@ -64,6 +64,12 @@
 | :-------- | :------------------------- |
 | `Ctrl+Space` | Open Spotlight |
 
+**Neovim / Lazyvim**
+
+| Shortcut | Description                |
+| :-------- | :------------------------- |
+| `<leader>ql` | Restore the last session for the current working directory. |
+
 **Qutebrowser**
 
 | Shortcut | Description                |
