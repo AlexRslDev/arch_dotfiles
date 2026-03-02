@@ -46,3 +46,9 @@ ps aux | grep gnome-keyring
 **Chromium based browsers error:**
 
 Chromium-based browsers: Sometimes they require an extra parameter. If it doesn't detect the keyring, try launching them with: --password-store=gnome-keyring
+
+### Detect Usb Mobile
+
+```
+sudo pacman -S gvfs-mtp gvfs-gphoto2 libmtp
+```
